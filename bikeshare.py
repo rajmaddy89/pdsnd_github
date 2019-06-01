@@ -140,6 +140,9 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
+    # Display the columns that has null values
+    df.isnull().any()
+
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
@@ -167,7 +170,7 @@ def user_stats(df):
 
         average_date_of_birth = birth_year.mean()
         print('The average date of birth is {}'.format(average_date_of_birth))
-        
+
         remove_nan_year = birth_year.fillna(0)
     
     print("\nThis took %s seconds." % (time.time() - start_time))
