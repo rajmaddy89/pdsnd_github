@@ -164,7 +164,10 @@ def user_stats(df):
     
         most_common_birth_year = birth_year.mode()[0]
         print('The most common birth year is {}'.format(most_common_birth_year))
-    
+
+        average_date_of_birth = birth_year.mean()
+        print('The average date of birth is {}'.format(average_date_of_birth))
+        
         remove_nan_year = birth_year.fillna(0)
     
     print("\nThis took %s seconds." % (time.time() - start_time))
