@@ -2,7 +2,7 @@
 2019-31-2019
 
 ### Project Title
-Data Science using Python Data Science libraries
+Programming in Data Science using Python Numpy and Panda libraries
 
 ### Description
  - Calculate descriptive statistics of bikeshare data using Python data science libraries like Numpy and Pandas
